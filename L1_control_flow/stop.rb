@@ -4,17 +4,11 @@ while true
     puts "Enter Age:"
     age = gets.chomp
 
-    if age === "STOP"
-        break
-    else
-        age = age.to_i
-    end
+    break if age === "STOP"
 
-    if age === (0...18)
+    unless (0...18).include?(age.to_i)
         puts "Eligible to vote"
     else
-        puts age.class
-        puts age
         puts "Not eligible to vote"
     end
     
