@@ -5,11 +5,11 @@ class Person
       @birthyear = birthyear
     end
   
-    def displayAge
+    def display_age
       age = @@currentYear - @birthyear
       "#{@name} is currently #{age} years of age"
     end
   end
   
   john = Person.new("John", 2000)
-  puts john.displayAge
+  puts john.display_age

@@ -5,19 +5,19 @@ class Person
       @age = age
     end
   
-    def displayAge
-      "#{generateUsername} is #{@age} years old"
+    def display_age
+      "#{generate_username} is #{@age} years old"
     end
   
     private
-    def generateUsername
+    def generate_username
       "#{@name}123"
     end
   
   end
   
   john = Person.new("John", "123 Maharlika St.", 22)
-  puts john.displayAge
+  puts john.display_age
   
   # below code returns an error
   
