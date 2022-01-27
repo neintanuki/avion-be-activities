@@ -1,0 +1,7 @@
+SELECT * FROM students INNER JOIN classrooms ON students.id = classrooms.student_id
+
+SELECT * FROM students LEFT JOIN classrooms ON students.id = classrooms.student_id
+
+SELECT * FROM students RIGHT JOIN classrooms ON students.id = classrooms.student_id
+
+SELECT * FROM students FULL JOIN classrooms ON students.id = classrooms.student_id
